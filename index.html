@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Texto a Código Morse y Viceversa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Conversor de Texto a Código Morse y Viceversa</h1>
+    <h3>Coloca un una diagonal entre palabras ( / ), para que no se pierda la lógica del texto ingresado para la conversión de morse a texto </h3>
+
+    <input type="text" id="inputText" placeholder="Introduce el texto o código morse">
+    <select id="mode">
+        <option value="textoAMorse">Texto a Morse</option>
+        <option value="morseATexto">Morse a Texto</option>
+    </select>
+    <button onclick="convert()">Convertir</button>
+    <textarea id="output" readonly></textarea>
+    <textarea id="errorOutput" readonly></textarea>
+    <script src="app.js"></script>
+</body>
+</html>
